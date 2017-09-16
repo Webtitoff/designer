@@ -1,0 +1,58 @@
+@mixin color($bg:#fff,$color:#575757){
+	background: $bg;
+	color: $color;
+}
+@mixin inline-block($align:top){
+	vertical-align: $align;
+	display: inline-block;
+}
+@mixin desktop{
+	@media screen and(max-width: 1200px){	//	DESCTOP
+		@content;
+	}
+}
+
+@mixin tablet-land{
+	@media screen and(max-width: 992px){	//	TABLET-LAND
+		@content;
+	}
+}
+
+@mixin tablet{
+	@media screen and(max-width: 768px){	//	TABLET
+		@content;
+	}
+}
+
+@mixin smart{
+	@media screen and(max-width: 480px){	//	SMART
+		@content;
+	}
+}
+
+@mixin mobile{
+	@media screen and(max-width: 360px){	//	MOBILE
+		@content;
+	}
+}
+
+//	retina
+
+@mixin retina{
+	@media screen and(-webkit-min-device-pixel-ratio: 1.5),
+screen and(min-resolution: 144dpi){
+	@content;
+	}
+}
+
+%clearfix{
+	&:after{
+	content: '';
+	display: block;
+	clear: both;
+	}
+}
+
+@function rem($px){
+	@return $px / 16px + 0rem;
+}

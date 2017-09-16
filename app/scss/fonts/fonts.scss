@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'juraregular';
+    src: url('../assets/fonts/juraregular-webfont.woff') format('woff'),
+         url('../assets/fonts/juraregular-webfont.svg#juraregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'signikaregular';
+    src: url('../assets/fonts/signika-webfont.woff') format('woff'),
+         url('../assets/fonts/signika-webfont.svg#signikaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'forumregular';
+    src: url('../assets/fonts/forum_allfont.ru-webfont.woff') format('woff'),
+         url('../assets/fonts/forum_allfont.ru-webfont.svg#forumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@mixin fonts($font: signika){
+    
+    @if $font == signika {
+        font-family: 'signikaregular', 'sans-serif';
+    }
+    @if $font == jura {
+        font-family: 'juraregular', 'sans-serif';
+    }
+    @if $font == forum {
+        font-family: 'forumregular', 'sans-serif';
+    }
+}

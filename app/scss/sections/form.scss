@@ -1,0 +1,50 @@
+.ajax-contact-form{
+	margin-top: 60px;
+}
+.form-part__left{
+	float: left;
+	margin-right: 5px;
+}
+.control-group{
+	margin-bottom: 7px;
+}
+.input, .textarea{
+	width: 370px;
+	height: 40px;
+	@include fonts(jura);
+	padding: 7px 10px;
+}
+
+.textarea{
+	height: 134px;
+}
+.button{
+	text-align: right;
+	background: #fff;
+	border: none;
+	padding: 5px;
+	@include fonts(jura);
+	font-weight: 600;
+}
+.notification_error{
+	font-size:1rem;
+	height:auto;
+	margin-top: -43px;
+	width: 370px;
+	padding:4px;
+	color: #a50101;
+  position: absolute;
+  top: 100%;
+}
+.notification_ok{
+	margin: 120px 5px;
+	font-size:1.3rem;
+	color: green;
+	width: 98%;
+	border:1px #567397 solid;
+	height:auto;
+	padding:8px;
+	background:#f5f9fd;
+	text-align:center;
+	border-radius:5px;
+}

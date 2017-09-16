@@ -1,0 +1,24 @@
+{
+  "name": "gulp-project",
+  "description": "gulp-project - Start HTML Template",
+  "main": "index.js",
+  "authors": [
+    "WebTitov"
+  ],
+  "license": "ISC",
+  "homepage": "https://webtitov.ru",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "normalize-css": "normalize.css#^7.0.0",
+    "magnific-popup": "https://github.com/dimsemenov/Magnific-Popup.git#^1.1.0"
+  }
+}

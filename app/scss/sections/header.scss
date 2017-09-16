@@ -1,0 +1,131 @@
+.header{
+	margin-top: 50px;
+	.container-fluid{
+		padding: 0;
+	}
+}
+.navbar{
+	@include color(#575757);
+	border-radius: 0;
+}
+.logo{
+	color: #96CD36;
+	line-height: 1;
+	&__text_bottom{
+		color: #fff;
+		font-size: 2rem;
+	}
+	&:hover{
+		text-decoration: none;
+		color: #96CD36;
+	} 
+	.logo-wrap{
+		width: 150px;
+		left: 270px;
+    @include fonts(jura);
+    font-size: 1.5rem;
+    position: absolute;
+		bottom: 8px;
+		margin-left: -7px;		
+		}
+}
+.logo__img{
+	background:transparent;
+	left: 125px;
+  position: absolute;
+  top: -5px;
+  width: 148px;
+	float: left;
+}   
+.navbar-default{
+	border: none;
+	.navbar-nav>li{
+		height: 100%;
+	}
+	 .navbar-nav>li>a {
+	 	font-size: 1.15rem;
+	 	@include fonts(jura);
+    color: #fff;
+    height: 100%;
+    width: 160px;
+    text-align: center;
+    border-bottom: 5px solid transparent;
+    line-height: 110px-30;
+    transition:.5s;
+    &:hover{
+    	background:#96CD36;
+    	border-bottom: 5px solid #575757;
+    }
+    
+    &.active{
+    	background:#fff;
+    	color: #575757;
+    	border-bottom: 5px solid #575757;
+    }
+	}
+}
+.navbar-default .navbar-nav>.open>a, 
+.navbar-default .navbar-nav>.open>a:focus, 
+.navbar-default .navbar-nav>.open>a:hover{
+	background:#fff;
+	border-bottom: 5px solid #575757;
+}
+.navbar-nav>li>.dropdown-menu{
+	margin-top: 2px;
+	border: 0;
+	border-radius: 0;
+	padding: 0;
+	& li{
+		@include color(#575757);
+		& a{
+			color: #fff;
+			transition: .5s;
+			padding: 7px;
+			text-align: center;
+			font-size: 1.15rem;
+			@include fonts(jura);
+			/* @include tablet{
+				color: #fff!important;
+				} */
+			&:hover{
+				color: #575757;
+				background:#96CD36;
+				/* @include tablet{
+				background:#96CD36!important;
+				color: #575757!important;
+				} */
+			}
+			&.active{
+    	background:#fff;
+    	color: #575757;
+    	/* @include tablet{
+    					color: #575757!important;
+    					} */
+  	  }
+		}
+	}
+}
+
+.navbar-toggle{
+	right: 20px;
+}
+
+
+ul.navbar-nav li.dropdown:hover ul.dropdown-menu{
+display: block;
+margin: 0;
+}
+ 
+a.menu:after, .dropdown-toggle:after {
+content: none;
+}
+
+
+
+
+
+
+
+
+
+
